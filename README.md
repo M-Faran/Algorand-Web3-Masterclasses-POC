@@ -42,3 +42,91 @@ This is the fastest way to get up and running!
 
 https://github.com/user-attachments/assets/ee3fda3e-f4fe-4190-867b-0a626f0eb099
 
+
+
+## 🚀 Project Setup
+After the `algokitinit` command do the following steps,
+
+1. **.env Setup**
+
+   - Your .env shall look like this, you can copy paste from here as well.
+```
+# # ======================
+# # LocalNet configuration
+# # uncomment below to use
+# # ======================
+
+# VITE_ENVIRONMENT=local
+
+# # Algod
+# VITE_ALGOD_TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# VITE_ALGOD_SERVER=http://localhost
+# VITE_ALGOD_PORT=4001
+# VITE_ALGOD_NETWORK=localnet
+
+# # Indexer
+# VITE_INDEXER_TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# VITE_INDEXER_SERVER=http://localhost
+# VITE_INDEXER_PORT=8980
+
+# # KMD
+# # Please note:
+# # 1. This is only needed for LocalNet since
+# # by default KMD provider is ignored on other networks.
+# # 2. AlgoKit LocalNet starts with a single wallet called 'unencrypted-default-wallet',
+# # with heaps of tokens available for testing.
+# VITE_KMD_TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# VITE_KMD_SERVER=http://localhost
+# VITE_KMD_PORT=4002
+# VITE_KMD_WALLET="unencrypted-default-wallet"
+# VITE_KMD_PASSWORD=""
+
+# # ======================
+# # TestNet configuration:
+# # uncomment below to use
+# # ======================
+
+ VITE_ENVIRONMENT=local
+
+# # Algod
+ VITE_ALGOD_TOKEN=""
+ VITE_ALGOD_SERVER="https://testnet-api.algonode.cloud"
+ VITE_ALGOD_PORT=""
+ VITE_ALGOD_NETWORK="testnet"
+
+ # Indexer
+ VITE_INDEXER_TOKEN=""
+ VITE_INDEXER_SERVER="https://testnet-idx.algonode.cloud"
+ VITE_INDEXER_PORT=""
+
+
+# # ======================
+# # MainNet configuration:
+# # uncomment below to use
+# # ======================
+
+# VITE_ENVIRONMENT=production
+
+# # Algod
+# VITE_ALGOD_TOKEN=""
+# VITE_ALGOD_SERVER="https://mainnet-api.algonode.cloud"
+# VITE_ALGOD_PORT=""
+# VITE_ALGOD_NETWORK="mainnet"
+
+# # Indexer
+# VITE_INDEXER_TOKEN=""
+# VITE_INDEXER_SERVER="https://mainnet-idx.algonode.cloud"
+# VITE_INDEXER_PORT=""
+```
+
+2. **src/Home.tsx Setup**
+   
+   - After that paste the prompt given in the reference guide and the code in src/Home.tsx into Chatgpt, then paste the Chatgpt output back into src/Home.tsx.**
+  
+
+
+## 🌟 Final Result
+
+   - Final result shall look something like this.
+
+<img width="1366" height="641" alt="image" src="https://github.com/user-attachments/assets/bdeb9484-6bb2-40d8-9c8b-4bf27e372d74" />
